@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.Views.FriendsIU"
+             Title="Friends Feed">
+    <ScrollView>
+        <StackLayout>
+            <Frame Padding="30">
+                <FlexLayout Direction="Column">
+
+                    <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                        <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                        <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                        <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                        <BoxView BackgroundColor="GreenYellow"
+                             WidthRequest="10"
+                             HeightRequest="10"
+                             HorizontalOptions="End"
+                             VerticalOptions="Center"
+                             />
+
+
+                    </StackLayout>
+
+                    <AbsoluteLayout BackgroundColor="Orange"
+                                    HeightRequest="5"
+                                Margin="5"/>
+
+                    <StackLayout Orientation="Horizontal"
+                             >
+                        <Image Source="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" 
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Margin="5"/>
+                        <Image Source="https://cdn.pixabay.com/photo/2016/12/06/01/26/colour-1885352__480.jpg"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Margin="5"/>
+                        <Image Source="https://neliosoftware.com/es/wp-content/uploads/sites/3/2018/07/aziz-acharki-549137-unsplash-1200x775.jpg"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Margin="5"/>
+                    </StackLayout>
+
+                    <Frame WidthRequest="350"
+                       Padding="0">
+                        <Label Text="a leyenda que circula entre los tipógrafos afirma que el Lorem ipsum original se trataba de un texto formado por trozos tomados al azar de la obra Finibus Bonorum et Malorum de Cicerón que un impresor del renacimiento usó para hacer pruebas de composición."                                              />
+                    </Frame>
+
+
+                    <AbsoluteLayout BackgroundColor="Gray"
+                                    HeightRequest="3"
+                                Margin="0,10"/>
+
+                    <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"                         >
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/833/833472.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                        <Label Text="123"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+                        <Image Source="https://cdn-icons.flaticon.com/png/512/3318/premium/3318523.png?token=exp=1647408413~hmac=10179f9bae72f406c3ca22a14dedcbf2"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                        <Label Text="54"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                            VerticalOptions="Center"/>
+                        <Image Source="https://cdn-icons-png.flaticon.com/128/25/25419.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+
+                    </StackLayout>
+                </FlexLayout>
+
+            </Frame>
+
+            <Frame Padding="30">
+                <FlexLayout Direction="Column">
+
+                    <StackLayout Orientation="Horizontal"
+                         HeightRequest="40"
+                         >
+                        <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                       WidthRequest="40"
+                       HeightRequest="40"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                        <Label Text="John Doe"
+                       FontAttributes="Bold"
+                       HorizontalOptions="StartAndExpand"
+                        VerticalOptions="Center"/>
+
+                        <Label Text="Today 12 AM"
+                        VerticalOptions="Center"
+                       FontSize="Micro"/>
+
+                        <BoxView BackgroundColor="GreenYellow"
+                         WidthRequest="10"
+                         HeightRequest="10"
+                         HorizontalOptions="End"
+                         VerticalOptions="Center"
+                         />
+
+
+                    </StackLayout>
+
+                    <AbsoluteLayout BackgroundColor="Orange"
+                                HeightRequest="5"
+                            Margin="5"/>
+
+                    <Frame WidthRequest="350"
+                   Padding="0">
+                        <Label Text="a leyenda que circula entre los tipógrafos afirma que el Lorem ipsum original se trataba de un texto formado por trozos tomados al azar de la obra Finibus Bonorum et Malorum de Cicerón que un impresor del renacimiento usó para hacer pruebas de composición."                                              />
+                    </Frame>
+
+
+                    <AbsoluteLayout BackgroundColor="Gray"
+                                HeightRequest="3"
+                            Margin="0,10"/>
+
+                    <StackLayout Orientation="Horizontal"
+                         HeightRequest="40"                         >
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/833/833472.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                        <Label Text="123"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                        VerticalOptions="Center"/>
+                        <Image Source="https://cdn-icons.flaticon.com/png/512/3318/premium/3318523.png?token=exp=1647408413~hmac=10179f9bae72f406c3ca22a14dedcbf2"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                        <Label Text="54"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                        VerticalOptions="Center"/>
+                        <Image Source="https://cdn-icons-png.flaticon.com/128/25/25419.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+
+                    </StackLayout>
+                </FlexLayout>
+
+            </Frame>
+            <Frame Padding="30">
+                <FlexLayout Direction="Column">
+
+                    <StackLayout Orientation="Horizontal"
+                         HeightRequest="40"
+                         >
+                        <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                       WidthRequest="40"
+                       HeightRequest="40"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                        <Label Text="John Doe"
+                       FontAttributes="Bold"
+                       HorizontalOptions="StartAndExpand"
+                        VerticalOptions="Center"/>
+
+                        <Label Text="Today 12 AM"
+                        VerticalOptions="Center"
+                       FontSize="Micro"/>
+
+                        <BoxView BackgroundColor="GreenYellow"
+                         WidthRequest="10"
+                         HeightRequest="10"
+                         HorizontalOptions="End"
+                         VerticalOptions="Center"
+                         />
+
+
+                    </StackLayout>
+
+                    <AbsoluteLayout BackgroundColor="Orange"
+                                HeightRequest="5"
+                            Margin="5"/>
+
+                    <StackLayout Orientation="Horizontal"
+                         >
+                        <Image Source="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" 
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       Margin="5"/>
+                        <Image Source="https://cdn.pixabay.com/photo/2016/12/06/01/26/colour-1885352__480.jpg"
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       Margin="5"/>
+                        <Image Source="https://neliosoftware.com/es/wp-content/uploads/sites/3/2018/07/aziz-acharki-549137-unsplash-1200x775.jpg"
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       Margin="5"/>
+                    </StackLayout>
+
+                    <Frame WidthRequest="350"
+                   Padding="0">
+                        <Label Text="a leyenda que circula entre los tipógrafos afirma que el Lorem ipsum original se trataba de un texto formado por trozos tomados al azar de la obra Finibus Bonorum et Malorum de Cicerón que un impresor del renacimiento usó para hacer pruebas de composición."                                              />
+                    </Frame>
+
+
+                    <AbsoluteLayout BackgroundColor="Gray"
+                                HeightRequest="3"
+                            Margin="0,10"/>
+
+                    <StackLayout Orientation="Horizontal"
+                         HeightRequest="40"                         >
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/833/833472.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                        <Label Text="123"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                        VerticalOptions="Center"/>
+                        <Image Source="https://cdn-icons.flaticon.com/png/512/3318/premium/3318523.png?token=exp=1647408413~hmac=10179f9bae72f406c3ca22a14dedcbf2"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                        <Label Text="54"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                        VerticalOptions="Center"/>
+                        <Image Source="https://cdn-icons-png.flaticon.com/128/25/25419.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+
+                    </StackLayout>
+                </FlexLayout>
+
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

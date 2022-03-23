@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.ProfileIU"
+             Title="Perfil">
+   <NavigationPage.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="Center"
+          Spacing="10">
+            <Label
+                Text="YOUR"
+                FontSize="24"
+                TextColor="Gray"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+               Text="PROFILE"
+               FontSize="24"
+               TextColor="White"
+                HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Image Source="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701745513.jpg" Aspect="AspectFill"></Image>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <AbsoluteLayout>
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+                           WidthRequest="150"
+                           AbsoluteLayout.LayoutBounds="30,30"/>
+                </AbsoluteLayout>
+
+                <RelativeLayout Grid.Column="2">
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/456/456212.png"
+                           RelativeLayout.HeightConstraint="18"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.15}"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3}"/>
+                    <Label Text="John Doe"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.3}"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.3}"/>
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/725/725643.png"
+                           RelativeLayout.HeightConstraint="18"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.15}"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.45}"/>
+                    <Label Text="johndoe@site.com"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.3}"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.45}"/>
+                    <Image Source="https://cdn-icons-png.flaticon.com/512/1231/1231223.png"
+                           RelativeLayout.HeightConstraint="18"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.15}"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.6}"/>
+                    <Label Text="www.johnsite.com" 
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.3}"
+                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.6}"/>
+                </RelativeLayout>
+
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid></Grid>
+            <StackLayout Margin="30,20,30,0">
+                <Frame Padding="20,15" Margin="0,0,0,10">
+                    <AbsoluteLayout>
+                        <Image Source="https://img.icons8.com/ios/344/laptop-webcam--v1.png"
+                               WidthRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Photos e Images" AbsoluteLayout.LayoutBounds="30,0"/>
+                    </AbsoluteLayout>
+                </Frame>
+                <Frame Padding="20,15" Margin="0,0,0,10">
+                    <AbsoluteLayout>
+                        <Image Source="https://img.icons8.com/ios/344/music-book.png"
+                               WidthRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Music Tracks" AbsoluteLayout.LayoutBounds="30,0"/>
+                    </AbsoluteLayout>
+                </Frame>
+                <Frame Padding="20,15" Margin="0,0,0,10">
+                    <AbsoluteLayout>
+                        <Image Source="https://img.icons8.com/ios/344/contacts.png"
+                               WidthRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Contact List" AbsoluteLayout.LayoutBounds="30,0"/>
+                    </AbsoluteLayout>
+                </Frame>
+            </StackLayout>
+            <!-- BoxView Verticales -->
+            <AbsoluteLayout>
+                <!-- Photos -->
+                <BoxView Color="OrangeRed"
+                         AbsoluteLayout.LayoutBounds="30,20,5,50"/>
+                <!-- Music -->
+                <BoxView Color="OrangeRed"
+                         AbsoluteLayout.LayoutBounds="30,87,5,50"/>
+                <!-- Contact -->
+                <BoxView Color="OrangeRed"
+                         AbsoluteLayout.LayoutBounds="30,153,5,50"/>
+            </AbsoluteLayout>
+            <!-- Insercion de button Flecha Derecha en Photos,Music and Contact -->
+            <RelativeLayout>
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/7087/7087143.png"
+                             BackgroundColor="Transparent"
+                       RelativeLayout.WidthConstraint="35"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.12}"/>
+                <ImageButton x:Name="Go_Tracks" Source="https://cdn-icons-png.flaticon.com/512/7087/7087143.png"
+                             BackgroundColor="Transparent" Clicked="Go_Tracks_Clicked"
+                             
+                       RelativeLayout.WidthConstraint="35"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.43}"/>
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/7087/7087143.png"
+                             BackgroundColor="Transparent"
+                       RelativeLayout.WidthConstraint="35"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.75}"/>
+            </RelativeLayout>
+        </Grid>
+        
+        <AbsoluteLayout Grid.Row="2" Margin="30,0,30,10">
+
+
+
+            <Frame Opacity="0.5" AbsoluteLayout.LayoutBounds="0,0,325,50">
+
+            </Frame>
+            <AbsoluteLayout>
+                <BoxView Color="OrangeRed"
+                     AbsoluteLayout.LayoutBounds="0,20,325,5"></BoxView>
+            </AbsoluteLayout>
+            
+            <AbsoluteLayout>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/1029/1029183.png"
+                       AbsoluteLayout.LayoutBounds="25,12,25,25"></Image>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+                       AbsoluteLayout.LayoutBounds="75,8,30,30"></Image>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+                       AbsoluteLayout.LayoutBounds="125,8,30,30"></Image>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+                       AbsoluteLayout.LayoutBounds="175,8,30,30"></Image>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/64/64572.png"
+                       AbsoluteLayout.LayoutBounds="225,8,30,30"></Image>
+                <Image Source="https://cdn-icons.flaticon.com/png/512/5996/premium/5996831.png?token=exp=1647333011~hmac=75650acbcd88877c00c92a38114ad79f"
+                       AbsoluteLayout.LayoutBounds="275,8,30,30"></Image>
+        </AbsoluteLayout>
+            
+
+
+        </AbsoluteLayout>
+        
+
+        <Grid Grid.Row="3">
+            <StackLayout Margin="30,0,30,0">
+                <Frame Padding="20,15" Margin="0,0,0,10">
+                    <AbsoluteLayout>
+                        <Image Source="https://img.icons8.com/ios/344/imessage.png"
+                               WidthRequest="20" HorizontalOptions="Start"/> 
+                        <Label Text="Messages" AbsoluteLayout.LayoutBounds="30,0"/>
+                    </AbsoluteLayout>
+                </Frame>
+                <Frame Padding="20,15" Margin="0,0,0,10">
+                    <AbsoluteLayout>
+                        <Image Source="https://img.icons8.com/ios/344/calendar--v1.png"
+                               WidthRequest="20" HorizontalOptions="Start"/>
+                        <Label Text="Calendar" AbsoluteLayout.LayoutBounds="30,0"/>
+                    </AbsoluteLayout>
+                </Frame>
+            </StackLayout>
+            <!-- BoxView Verticales -->
+            <AbsoluteLayout>
+                <!-- Messages -->
+                <BoxView Color="OrangeRed"
+                         AbsoluteLayout.LayoutBounds="30,0,5,50"/>
+                <!-- Calendar -->
+                <BoxView Color="OrangeRed"
+                         AbsoluteLayout.LayoutBounds="30,65,5,50"/>
+            </AbsoluteLayout>
+            <!-- Insercion de button Flecha Derecha en Messages y Calendar -->
+            <RelativeLayout>
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/7087/7087143.png"
+                             BackgroundColor="Transparent"
+                       RelativeLayout.WidthConstraint="35"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.04}"/>
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/7087/7087143.png"
+                             BackgroundColor="Transparent"
+                       RelativeLayout.WidthConstraint="35"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.35}"/>
+            </RelativeLayout>
+        </Grid>
+        
+
+    </Grid>
+</ContentPage>

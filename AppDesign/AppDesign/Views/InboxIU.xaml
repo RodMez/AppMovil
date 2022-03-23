@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.Views.InboxIU"
+             Title="Inbox Messages">
+    <FlexLayout Direction="Column">
+
+        <!-- Header -->
+        <FlexLayout FlexLayout.Grow="1"
+                    Direction="Row"
+                    BackgroundColor="Orange">
+
+            <SearchBar Placeholder="Hola, busca aqui"                       
+                HorizontalOptions="Start"
+                Margin="15,0,0,0"  />
+
+            <Image Source="https://cdn-icons.flaticon.com/png/512/3218/premium/3218926.png?token=exp=1647330281~hmac=706b93c45565b05b4ebf6eab7c9ed856"
+                   WidthRequest="30"                  
+                   Margin="10" />
+
+        </FlexLayout>
+
+        <!-- Body -->
+        <FlexLayout FlexLayout.Grow="15"
+                    Margin="0,50,20,0"                       
+                    Direction="Column">
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"
+                            Margin="0,0,5,0"
+                        Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"
+                            />
+                        <Label   
+                            Text="Hoy 23:59:59"
+                            FontSize="Micro"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="20,10"
+                        Source="https://cdn-icons.flaticon.com/png/512/6062/premium/6062709.png?token=exp=1647330664~hmac=80b03717d8a609173b3abf8557ab86b6"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+
+                <Label Text="lorem ipsum dolore alfhakbc cajsdnaioh ca fasf"
+                       FontSize="Small"
+                       Grid.Row="1"
+                       Margin="30,10,30,10"/>
+
+            </Grid>
+
+        </FlexLayout>
+
+    </FlexLayout>
+</ContentPage>

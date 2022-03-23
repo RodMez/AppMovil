@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.MenuIU"
+             Title="MenuLateral">
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView x:Name="MyCollection" ItemsSource="{Binding MenuDynamics}"
+                            ItemSizingStrategy="MeasureAllItems" SelectedItem="{Binding SelectedItem}"
+                        SelectionMode="Single"
+                       SelectionChanged="CollectionView_SelectionChanged">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+
+
+                        <StackLayout Padding="0,20,0,20">
+
+                            <Frame CornerRadius="50" BorderColor="DarkBlue"  HasShadow="True" VerticalOptions="CenterAndExpand"
+                           >
+                                <Label VerticalTextAlignment="Center" Text="{Binding Tittle}" HorizontalOptions="Center" FontSize="Subtitle" 
+                               HorizontalTextAlignment="Center"
+                        TextColor="DarkBlue"/>
+                            </Frame>
+                        </StackLayout>
+
+
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

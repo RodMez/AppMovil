@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar"
+             x:Class="AppDesign.Views.CalendarIU">
+    <ScrollView>
+        <FlexLayout Direction="Column">
+            <!-- https://github.com/lilcodelab/Xamarin.Plugin.Calendar 
+                    Documentacion plugin calendario-->
+            <!--Install-Package Xamarin.Plugin.Calendar -Version 2.0.9699
+                Linea para instalar plugin calendario desde consola de admin de paquetes-->
+            <!-- xmlns:controls="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar" 
+                Linea que va en el ContentPage-->
+            
+            <controls:Calendar
+                Day="14"
+                Month="5"
+                Year="2019"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"/>
+
+            <AbsoluteLayout BackgroundColor="Gray"
+                            HeightRequest="3"
+                            Margin="0,10"/>
+
+            <Label Text="Today's Events"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   Margin="0,20"/>
+
+            <Frame Margin="0,10">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                    <Image Source="https://img.icons8.com/ios-glyphs/344/user--v1.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                    <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                    <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/512/512142.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                    <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                    <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                    <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/512/512142.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                    <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                    <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                    <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/512/512142.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                    <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                    <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                    <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/512/512142.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                    <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                    <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                    <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/512/512142.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Frame>
+            <Frame Margin="0,10">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="40"
+                             >
+                    <Image Source="https://cdn-icons.flaticon.com/png/128/552/premium/552721.png?token=exp=1647405220~hmac=3e612d9a4affeb69c58d277bbc97823b"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"/>
+                    <Label Text="John Doe"
+                           FontAttributes="Bold"
+                           HorizontalOptions="StartAndExpand"
+                            VerticalOptions="Center"/>
+
+                    <Label Text="Today 12 AM"
+                            VerticalOptions="Center"
+                           FontSize="Micro"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/512/512142.png"
+                           WidthRequest="40"
+                           HeightRequest="40"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"/>
+
+                </StackLayout>
+            </Frame>
+
+        </FlexLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.Views.ContactIU"
+             Title="Contact List">
+    <FlexLayout Direction="Column">
+
+        <!-- Header -->
+        <FlexLayout FlexLayout.Grow="1"
+                    Direction="Row"
+                    BackgroundColor="Orange">
+
+            <Image Source="https://cdn-icons.flaticon.com/png/512/2618/premium/2618254.png?token=exp=1647322774~hmac=5bc9f883febf33dd1ec4e92211da1e38"
+                WidthRequest="30"
+                HorizontalOptions="Start"
+                Margin="10,0,230,0" 
+                   />
+
+            <Image Source="https://cdn-icons.flaticon.com/png/512/2961/premium/2961957.png?token=exp=1647323166~hmac=ae9d2519cba9facf5851d1a4d2d48787"
+                   WidthRequest="30"                   
+                   Margin="10"
+                   HorizontalOptions="End"/>
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/107/107256.png"
+                   WidthRequest="30"                  
+                   Margin="10" />
+
+        </FlexLayout>
+
+        <FlexLayout FlexLayout.Grow="2"
+                    Direction="Row"
+                    BackgroundColor="Transparent">
+
+            <Label Text="Sort by:"
+                   HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center"
+                   Margin="20,0,120,0"/>
+
+            <Button Text="Status"
+                    Margin="0,25,5,25"
+                    BackgroundColor="Transparent"
+                    BorderColor="Orange"
+                    BorderWidth="2"/>
+
+            <Button Text="Name"
+                    HorizontalOptions="End"
+                    Margin="5,25,10,25"
+                    BackgroundColor="Transparent"
+                    BorderColor="Orange"
+                    BorderWidth="2"/>
+
+        </FlexLayout>
+        <!-- Body -->
+        <FlexLayout FlexLayout.Grow="15"
+                    Margin="0,0,20,0"                       
+                    Direction="Column">
+            <!--uSUARIO 1-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                          Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Jaiver Jose Rodriguez Meza"/>
+                        <Label   
+                            Text="Jaiver.rodriguez@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+            <!-- aQUI EMPIEZA EL OTRO USUARIO-->
+            <Grid Margin="10">
+                <Grid HeightRequest="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Image  Grid.Column="1"                    
+                        Source="https://cdn-icons.flaticon.com/png/128/3161/premium/3161402.png?token=exp=1647325543~hmac=4ef8f8abae46f8a729d4b2df8ede1a19"/>
+
+                    <StackLayout Grid.Column="2"  >
+                        <Label  
+                            Text="Javier Armando Mendoza MArtinez"/>
+                        <Label   
+                            Text="Javier.Mendoza@cecar.edu.co"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/595/595421.png"/>
+                    <Image Grid.Column="4"  
+                           Margin="5"
+                        Source="https://cdn-icons-png.flaticon.com/128/1636/1636015.png"/>
+                </Grid>
+            </Grid>
+
+
+        </FlexLayout>
+
+
+    </FlexLayout>
+</ContentPage>

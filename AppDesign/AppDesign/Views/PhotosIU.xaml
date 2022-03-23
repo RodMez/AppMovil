@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.Views.PhotosIU">
+    <StackLayout BackgroundColor="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <AbsoluteLayout Grid.Row="0" Grid.Column="0"  Padding="20"  >
+                <StackLayout >
+                    <Image Source="cuadrado1.jpg" 
+                           WidthRequest="140" HeightRequest="150"/>
+                </StackLayout>
+            </AbsoluteLayout>
+
+            <AbsoluteLayout>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png"
+                   AbsoluteLayout.LayoutBounds="65,55,40,40"/>
+                <Label Text="All photos" BackgroundColor="White" AbsoluteLayout.LayoutBounds="60,100"/>
+
+            </AbsoluteLayout>
+
+            <AbsoluteLayout Grid.Row="0" Grid.Column="1" Padding="20">
+                <StackLayout>
+                    <Image Source="cuadrado2.jpg"  WidthRequest="140" HeightRequest="150" />
+                </StackLayout>
+
+            </AbsoluteLayout>
+            <AbsoluteLayout Grid.Column="1">
+
+                <Image Source="heart.png" 
+                  AbsoluteLayout.LayoutBounds="60,50,40,40" />
+                <Label Text="Favorites" BackgroundColor="White"
+                       
+                   AbsoluteLayout.LayoutBounds="60,100"/>
+
+            </AbsoluteLayout>
+
+            <AbsoluteLayout Grid.Column="0" Grid.Row="1" Padding="20">
+                <StackLayout>
+                    <Image Source="cuadrado3.jpg" WidthRequest="130" HeightRequest="150" />
+                </StackLayout>
+
+            </AbsoluteLayout>
+            <AbsoluteLayout Grid.Row="1">
+                <Image Source="album.png" 
+                   AbsoluteLayout.LayoutBounds="60,60,40,40"/>
+                <Label Text="Albums" BackgroundColor="White" AbsoluteLayout.LayoutBounds="60,110" />
+            </AbsoluteLayout>
+
+            <AbsoluteLayout Grid.Column="1" Grid.Row="1" Padding="20">
+                <StackLayout>
+                    <Image Source="cuadrado4.jpg" WidthRequest="130" HeightRequest="150" />
+                </StackLayout>
+            </AbsoluteLayout>
+            <AbsoluteLayout Grid.Column="1" Grid.Row="1">
+                <Image Source="delete.png"
+                   AbsoluteLayout.LayoutBounds="60,60,40,40"/>
+                <Label Text="Delete" BackgroundColor="White" AbsoluteLayout.LayoutBounds="60,110" />
+            </AbsoluteLayout>
+
+        </Grid>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Frame>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+
+                        </Grid.ColumnDefinitions>
+
+                        <Frame Grid.Column="0" Padding="20" Grid.Row="0" BorderColor="Gray" >
+                            <AbsoluteLayout >
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="1" Grid.Row="0" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="2" Grid.Row="0" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="3" Grid.Row="0"  BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="4" Grid.Row="0" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="0" Grid.Row="1" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="1" Grid.Row="1" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="2" Grid.Row="1" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="3" Grid.Row="1" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="4" Grid.Row="1" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="0" Grid.Row="2" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="1" Grid.Row="2" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="2" Grid.Row="2" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="3" Grid.Row="2" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="4" Grid.Row="2" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="4" Grid.Row="3" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="0" Grid.Row="3" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="1" Grid.Row="3" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="2" Grid.Row="3" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="3" Grid.Row="3" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="20"/>
+                            </AbsoluteLayout>
+                        </Frame>
+                        <Frame  Grid.Column="4" Grid.Row="3" BorderColor="Gray">
+                            <AbsoluteLayout>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/685/685655.png" WidthRequest="20" HeightRequest="25"/>
+                            </AbsoluteLayout>
+                        </Frame>
+
+
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>

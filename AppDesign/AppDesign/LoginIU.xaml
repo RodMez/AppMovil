@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.LoginIU"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+
+        <Image Source="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701745513.jpg" Aspect="AspectFill"/>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <Image Source="https://thewebappmarket.com/wp-content/uploads/2022/02/App-review-logo-2-7.png"
+                       WidthRequest="200" Margin="50"></Image>
+            </StackLayout>
+            <Grid Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                
+                    <Label Grid.Column="0" Text="Welcome to" FontSize="Title" TextColor="#22223F" HorizontalTextAlignment="Center"
+                           HorizontalOptions="End"
+                           />
+                <Label  Grid.Column="1" Text="APP DESIGN" FontSize="Title" FontAttributes="Bold" TextColor="#08084D" HorizontalTextAlignment="Center"
+                           HorizontalOptions="Start" Margin="0,0,60,0" />
+            </Grid>
+            <Grid Grid.Row="2" Margin="0,20,0,0">
+                <StackLayout>
+                    <Frame Margin="60,0,60,10" Padding="10" CornerRadius="50" HeightRequest="40" BackgroundColor="Transparent" BorderColor="Gray">
+                        <RelativeLayout>
+                            <Image Source="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" WidthRequest="30" HeightRequest="30"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="USERNAME" PlaceholderColor="OrangeRed" 
+                                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.2}"
+                                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.7}"/>
+                        </RelativeLayout>
+                    </Frame>
+                    <Frame Margin="60,0,60,0" Padding="10"  CornerRadius="50" HeightRequest="40" BackgroundColor="Transparent" BorderColor="Gray">
+                        <RelativeLayout>
+                            <Image Source="https://cdn-icons-png.flaticon.com/512/483/483408.png" WidthRequest="30" HeightRequest="30"
+                                   Opacity="0.5"/>
+                            <Entry Placeholder="PASSWORD" IsPassword="True" PlaceholderColor="OrangeRed"
+                                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.2}"
+                                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.7}"/>
+                        </RelativeLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="3" Margin="70,20,70,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0">
+                    <Button  x:Name="Login" Text="SIGN IN" TextColor="White" CornerRadius="50" BackgroundColor="DarkBlue"
+                             Clicked="Login_Clicked"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Column="1">
+                    <Button  x:Name="Register" Text="REGISTER" TextColor="White" CornerRadius="50" BackgroundColor="DarkBlue" 
+                             Clicked="Register_Clicked"/>
+                </StackLayout>
+                
+                
+            </Grid>
+            <Grid Grid.Row="4" Margin="0,40,0,50">
+                <StackLayout Margin="0,0,0,30">
+                    <Label Text="OR" HorizontalOptions="CenterAndExpand" FontSize="Title"/>
+                    <Label Text="Login With" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+                    <AbsoluteLayout Margin="0,20,0,0">
+                        <ImageButton x:Name="LoginF" Source="https://cdn-icons-png.flaticon.com/512/145/145802.png" CornerRadius="50" BackgroundColor="Transparent" 
+                                 AbsoluteLayout.LayoutBounds="100,0,40,40" Clicked="LoginF_Clicked"/>
+                        <ImageButton x:Name="LoginT" Source="https://img.icons8.com/fluency/344/twitter-circled.png" CornerRadius="50" BackgroundColor="Transparent" 
+                                     
+                                AbsoluteLayout.LayoutBounds="170,0,40,40" Clicked="LoginT_Clicked"/>
+                        <ImageButton x:Name="LoginG" Source="https://cdn-icons-png.flaticon.com/512/2111/2111413.png" CornerRadius="50" BackgroundColor="Transparent"
+                                 AbsoluteLayout.LayoutBounds="240,0,40,40" Clicked="LoginG_Clicked"/>
+                    </AbsoluteLayout>
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+    </Grid>
+    
+    
+</ContentPage>

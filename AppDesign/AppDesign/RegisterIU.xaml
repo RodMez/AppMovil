@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.RegisterIU"
+             Title="Registro">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid >
+                <Image Source="fondoregister.jpg" Aspect="AspectFill" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <AbsoluteLayout >
+                        <Image Source="username.png" 
+                               WidthRequest="150" HeightRequest="150"  AbsoluteLayout.LayoutBounds="120,40"/>
+                    </AbsoluteLayout>
+
+                    <AbsoluteLayout>
+                        <Label AbsoluteLayout.LayoutBounds="40,160" Text="Create Account" FontSize="45" FontAttributes="Bold"
+                               TextDecorations="Underline" TextColor="white" />
+                    </AbsoluteLayout>
+
+                    <Frame Grid.Row="2" CornerRadius="40" Margin="40,5,40,5" BackgroundColor="Transparent" 
+                               BorderColor="Gray"  >
+
+                        <Entry Placeholder="NickName" PlaceholderColor="White" />
+
+                    </Frame>
+
+                    <Frame Grid.Row="3" CornerRadius="40" Margin="40,5,40,5" BackgroundColor="Transparent" 
+                               BorderColor="Gray" >
+                        <Entry  Placeholder="Email" PlaceholderColor="white"/>
+                    </Frame>
+
+                    <Frame Grid.Row="4" CornerRadius="40" Margin="40,5,40,5" BackgroundColor="Transparent" 
+                               BorderColor="Gray" >
+
+                        <Entry IsPassword="True" Placeholder="Contraseña" PlaceholderColor="White"/>
+
+                    </Frame>
+
+                    <Frame Grid.Row="5" CornerRadius="40" Margin="40,1,40,1" BackgroundColor="Transparent" 
+                               BorderColor="Gray"  >
+
+                        <Entry  IsPassword="True" Placeholder="Confirme Contraseña" TextColor="White" PlaceholderColor="white"/>
+
+                    </Frame>
+
+                    <Frame Grid.Row="6" BackgroundColor="Transparent" Margin="150,5,130,5" >
+
+                        <ImageButton Source="https://cdn-icons-png.flaticon.com/512/892/892662.png" BackgroundColor="white"
+                                      Clicked="ImageButton_Clicked" CornerRadius="40"/>
+                    </Frame>
+                </Grid>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

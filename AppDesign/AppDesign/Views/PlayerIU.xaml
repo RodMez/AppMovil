@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.PlayerIU"
+             Title="Music Player">
+   
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Row="0" Text="John Doe | First Album" HorizontalOptions="Center" TextColor="DarkBlue" Margin="0,15" FontSize="Body"/>
+            <AbsoluteLayout Grid.Row="1" Margin="0,0,0,20">
+                <Image Source="https://img.icons8.com/ios/344/skip-to-start--v1.png" WidthRequest="25"
+                       AbsoluteLayout.LayoutBounds="50,20"></Image>
+                <Image Source="https://img.icons8.com/ios/344/rewind-button-round--v1.png" WidthRequest="30"
+                       AbsoluteLayout.LayoutBounds="110,17"></Image>
+                <Image Source="https://img.icons8.com/ios/344/play--v1.png" WidthRequest="50" AbsoluteLayout.LayoutBounds="170,8"></Image>
+                <Image Source="https://img.icons8.com/ios/344/rewind-button-round--v1.png" Rotation="180" WidthRequest="30"
+                       AbsoluteLayout.LayoutBounds="250,17"></Image>
+                <Image Source="https://img.icons8.com/ios/344/skip-to-start--v1.png" Rotation="180" WidthRequest="25"
+                       AbsoluteLayout.LayoutBounds="325,20"></Image>
+            </AbsoluteLayout>
+
+            <Slider Grid.Row="2" Minimum="0" Maximum="100" Margin="0,20,0,0" 
+                     MinimumTrackColor="DarkBlue"
+                    MaximumTrackColor="DarkBlue" ThumbColor="OrangeRed"></Slider>
+        </Grid>
+        <Grid Margin="10" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" Padding="0,20,10,20">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout  Grid.Column="0" VerticalOptions="Center">
+                        <Label 
+                            Margin="20,0,20,0" FontSize="Title"
+                        Text="1"/>
+                    </StackLayout>
+                    
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                        <Label  
+                            Margin="20,0,20,0" FontSize="Body"
+                        Text="Music Track"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                        <Label  
+                            Margin="20,0,0,0" FontSize="12"
+                        Text="03:16"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://img.icons8.com/fluency/344/menu-2.png"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="1" Padding="0,20,10,20">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout  Grid.Column="0" VerticalOptions="Center">
+                        <Label 
+                            Margin="20,0,20,0" FontSize="Title"
+                        Text="2"/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                        <Label  
+                            Margin="20,0,20,0" FontSize="Body"
+                        Text="Music Track"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                        <Label  
+                            Margin="20,0,0,0" FontSize="12"
+                        Text="03:16"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://img.icons8.com/fluency/344/menu-2.png"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="2" Padding="0,20,10,20">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout  Grid.Column="0" VerticalOptions="Center">
+                        <Label 
+                            Margin="20,0,20,0" FontSize="Title"
+                        Text="3"/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                        <Label  
+                            Margin="20,0,20,0" FontSize="Body"
+                        Text="Music Track"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                        <Label  
+                            Margin="20,0,0,0" FontSize="12"
+                        Text="03:16"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://img.icons8.com/fluency/344/menu-2.png"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="3" Padding="0,20,10,20">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout  Grid.Column="0" VerticalOptions="Center">
+                        <Label 
+                            Margin="20,0,20,0" FontSize="Title"
+                        Text="4"/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                        <Label  
+                            Margin="20,0,20,0" FontSize="Body"
+                        Text="Music Track"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                        <Label  
+                            Margin="20,0,0,0" FontSize="12"
+                        Text="03:16"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://img.icons8.com/fluency/344/menu-2.png"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="4" Padding="0,20,10,20">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout  Grid.Column="0" VerticalOptions="Center">
+                        <Label 
+                            Margin="20,0,20,0" FontSize="Title"
+                        Text="5"/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                        <Label  
+                            Margin="20,0,20,0" FontSize="Body"
+                        Text="Music Track"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                        <Label  
+                            Margin="20,0,0,0" FontSize="12"
+                        Text="03:16"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://img.icons8.com/fluency/344/menu-2.png"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="5" Padding="0,20,10,20">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout  Grid.Column="0" VerticalOptions="Center">
+                        <Label 
+                            Margin="20,0,20,0" FontSize="Title"
+                        Text="6"/>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
+                        <Label  
+                            Margin="20,0,20,0" FontSize="Body"
+                        Text="Music Track"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+                        <Label  
+                            Margin="20,0,0,0" FontSize="12"
+                        Text="03:16"/>
+                    </StackLayout>
+
+                    <Image Grid.Column="3"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://img.icons8.com/fluency/344/menu-2.png"/>
+                </Grid>
+            </Frame>
+
+        </Grid>
+    </Grid>
+   
+</ContentPage>

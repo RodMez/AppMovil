@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.TracksIU"
+             Title="Music Tracks">
+    
+    <StackLayout>
+
+        <Frame BackgroundColor="OrangeRed" Opacity="0.8" Padding="25,0,0,0">
+            <AbsoluteLayout>
+
+                <SearchBar Placeholder="Search..." HorizontalOptions="Start"
+                           BackgroundColor="#c83609"  WidthRequest="250">
+                </SearchBar>
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/3237/3237433.png"
+                             WidthRequest="30" HorizontalOptions="End" BackgroundColor="Transparent"
+                             AbsoluteLayout.LayoutBounds="270,10,30,30"></ImageButton>
+                <ImageButton Source="https://cdn-icons-png.flaticon.com/512/6874/6874164.png"
+                             WidthRequest="30" HorizontalOptions="End" BackgroundColor="Transparent"
+                             AbsoluteLayout.LayoutBounds="310,10,30,30"></ImageButton>
+            </AbsoluteLayout>
+
+        </Frame>
+       
+        <Grid>
+            
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="0,0,0,20">
+                <StackLayout >
+                    <Label Text="Playlists" HorizontalOptions="CenterAndExpand" TextColor="DarkBlue"
+                           FontSize="20" Margin="0,20"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <AbsoluteLayout Grid.Column="0" Margin="10,0,10,0">
+                            <BoxView Color="Blue" Opacity="0.7"
+                                 AbsoluteLayout.LayoutBounds="0,0,110,110"></BoxView>
+                            <Image Source="https://cdn-icons-png.flaticon.com/512/7080/7080097.png"
+                                   AbsoluteLayout.LayoutBounds="40,30,35,35"/>
+                            <Label Text="12 Tracks" TextColor="Wheat"
+                                   AbsoluteLayout.LayoutBounds="25,90"/>
+                            <Label Text="My Playlist" TextColor="DarkBlue" FontSize="Body"
+                                   AbsoluteLayout.LayoutBounds="20,130"/>
+                        </AbsoluteLayout>
+                        <AbsoluteLayout Grid.Column="1" Margin="10,0,10,0">
+                            <BoxView Color="Red" Opacity="0.7"
+                                 AbsoluteLayout.LayoutBounds="0,0,110,110"></BoxView>
+                            <Image Source="https://cdn-icons-png.flaticon.com/512/7080/7080097.png"
+                                   AbsoluteLayout.LayoutBounds="40,30,35,35"/>
+                            <Label Text="12 Tracks" TextColor="Wheat"
+                                   AbsoluteLayout.LayoutBounds="25,90"/>
+                            <Label Text="Favorites" TextColor="DarkBlue" FontSize="Body" HorizontalTextAlignment="Center"
+                                   AbsoluteLayout.LayoutBounds="20,130"/>
+                        </AbsoluteLayout>
+                        <AbsoluteLayout Grid.Column="2" Margin="10,0,10,0">
+                            <BoxView Color="Violet" Opacity="0.7"
+                                 AbsoluteLayout.LayoutBounds="0,0,110,110"></BoxView>
+                            <Image Source="https://cdn-icons-png.flaticon.com/512/7080/7080097.png"
+                                   AbsoluteLayout.LayoutBounds="40,30,35,35"/>
+                            <Label Text="12 Tracks" TextColor="Wheat"
+                                   AbsoluteLayout.LayoutBounds="25,90"/>
+                            <Label Text="Winter" TextColor="DarkBlue" FontSize="Body" HorizontalTextAlignment="Center"
+                                   AbsoluteLayout.LayoutBounds="30,130"/>
+                        </AbsoluteLayout>
+                    </Grid>
+                </StackLayout>
+
+    
+                </Grid>
+
+            
+            <Grid Grid.Row="1">
+                <StackLayout>
+                    <AbsoluteLayout>
+                        <BoxView Color="Gray" AbsoluteLayout.LayoutBounds="120,0,150,5" ></BoxView>
+                    </AbsoluteLayout>
+                    <Label Text="Artists" TextColor="DarkBlue" FontSize="20" HorizontalTextAlignment="Center"
+                               Margin="0,10"/>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Frame Grid.Row="0" Padding="0,20,10,20">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image  Grid.Column="0"
+                            Margin="20,0,20,0" WidthRequest="40"
+                        Source="https://cdn-icons-png.flaticon.com/512/176/176531.png"/>
+
+                                <StackLayout Grid.Column="1"  >
+                                    <Label  
+                            Text="Javier Mendoza" TextColor="DarkBlue"
+                            />
+                                    <Label   
+                            Text="1 Album | 23 Songs"
+                            FontSize="12"/>
+                                </StackLayout>
+
+                                <Image Grid.Column="2"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://cdn-icons-png.flaticon.com/512/7080/7080097.png"/>
+                            </Grid>
+                        </Frame>
+                        <Frame Grid.Row="1" Padding="0,20,10,20">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image  Grid.Column="0"
+                            Margin="20,0,20,0" WidthRequest="40"
+                        Source="https://cdn-icons-png.flaticon.com/512/176/176531.png"/>
+
+                                <StackLayout Grid.Column="1"  >
+                                    <Label  
+                            Text="Javier Mendoza" TextColor="DarkBlue"
+                            />
+                                    <Label   
+                            Text="1 Album | 23 Songs"
+                            FontSize="12"/>
+                                </StackLayout>
+
+                                <Image Grid.Column="2"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://cdn-icons-png.flaticon.com/512/7080/7080097.png"/>
+                            </Grid>
+                        </Frame>
+                        <Frame Grid.Row="2" Padding="0,20,10,20">
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image  Grid.Column="0"
+                            Margin="20,0,20,0" WidthRequest="40"
+                        Source="https://cdn-icons-png.flaticon.com/512/176/176531.png"/>
+
+                                <StackLayout Grid.Column="1"  >
+                                    <Label  
+                            Text="Javier Mendoza" TextColor="DarkBlue"
+                            />
+                                    <Label   
+                            Text="1 Album | 23 Songs"
+                            FontSize="12"/>
+                                </StackLayout>
+
+                                <Image Grid.Column="2"  
+                           Margin="5" WidthRequest="25"
+                        Source="https://cdn-icons-png.flaticon.com/512/7080/7080097.png"/>
+                            </Grid>
+                        </Frame>
+
+                    </Grid>
+                </StackLayout>
+
+
+            </Grid>
+
+
+        </Grid>
+
+    </StackLayout>
+   
+</ContentPage>

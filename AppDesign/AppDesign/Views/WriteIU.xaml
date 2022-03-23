@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.Views.WriteIU">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+
+
+            <AbsoluteLayout Grid.Column="0" Grid.Row="0">
+                <Image Source="fondo1.jpg"/>
+
+                <Ellipse AbsoluteLayout.LayoutBounds="100,20"
+                    Fill="white"
+                    WidthRequest="150"
+                    HeightRequest="150"
+                    HorizontalOptions="Start"/>
+
+                <Image  AbsoluteLayout.LayoutBounds="150,50,50,50"
+                        Source="cameraXD.png"/>
+                <Label  AbsoluteLayout.LayoutBounds="140,100"
+                        Text="add main photo" 
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        TextColor="Gray"
+                                />
+                <Image  AbsoluteLayout.LayoutBounds="110,170,30,30"
+                        Source="lapizXD.png" 
+                       />
+                <Label  AbsoluteLayout.LayoutBounds="140,180"
+                        Text="Post Headline" 
+                        TextColor="DarkViolet"
+                        FontAttributes="Bold"/>
+
+
+            </AbsoluteLayout>
+            <AbsoluteLayout >
+                <StackLayout AbsoluteLayout.LayoutBounds="20,220" >
+                    <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting,industry. Lorem Ipsum has been the industry's standard dumm text ever since the 1500s, when an unknown printer took a galley, text ever since the 1500s, when an unknown printer took a galley,text ever since the 1500s,when an unknown printer took a galley,text ever since the 1500s, when an unknown printer took a galleytext ever since the 1500s, when an unknown printer took a galley,text ever since the 1500s, when an unknown printer to " 
+                           CharacterSpacing="1"
+                           FontAttributes="Bold"
+                           FontSize="Medium"/>
+                </StackLayout>
+
+            </AbsoluteLayout>
+            <AbsoluteLayout Grid.Column="0" Grid.Row="2" Padding="20">
+                <Image Source="cuadradotexto.jpg" AbsoluteLayout.LayoutBounds="0,0,150,150" />
+
+            </AbsoluteLayout>
+            <AbsoluteLayout >
+                <StackLayout AbsoluteLayout.LayoutBounds="190,370" >
+                    <Label Text="Lorem Ipsum is simply dummy 
+                           text of the printing and typesetting industry. Lorem 
+                           Ipsum has been the industry's standard dummy
+                           text ever since the 1500s, when an unknown 
+                           printer took a galley of type and scrambled it to make a
+                           type specimen book. It has survived not only five
+                           centuries,Lorem Ipsum is simply dummy text of the 
+                           printing and typesetting industry. Lorem Ipsum has been
+                           the industry's standard dummy text ever since
+                           the 1500s, when an unknown printer took a
+                           galley of type and scrambled it to make a type specimen book.
+                           It has survived not only five centuries " 
+                           CharacterSpacing="1"
+                           FontAttributes="Bold"
+                           FontSize="Medium"/>
+
+                </StackLayout>
+            </AbsoluteLayout>
+
+        </Grid>
+
+
+
+
+
+    </StackLayout>
+</ContentPage>

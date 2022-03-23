@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDesign.Views.SettingsIU">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout>
+
+                <AbsoluteLayout>
+
+                    <Image Source="fondo.jpg" />
+                    <Label Text="Music And Sonidos"
+                   TextColor="White"
+                   AbsoluteLayout.LayoutBounds="120,20"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                   />
+                    <Image Source="musica.png" AbsoluteLayout.LayoutBounds="0,70"/>
+
+                    <Label Text="Sounds Effects" 
+                       TextColor="White" 
+                       AbsoluteLayout.LayoutBounds="50,90"
+                       FontAttributes="Bold"
+                       FontSize="Medium"/>
+
+                    <Switch IsToggled="False"
+                        AbsoluteLayout.LayoutBounds="290,90"
+                        ThumbColor="Green"
+                    />
+                    <Label  AbsoluteLayout.LayoutBounds="10,120"
+                        Text="Lorem Ipsum is simply dummy text of the printing and typesetting indus. Lorem Ipsum has been the industry's standard " 
+                        TextColor="Gray"
+                        FontAttributes="None"
+                        FontSize="Medium"
+                        />
+                    <Image Source="notamusical.png" AbsoluteLayout.LayoutBounds="10,200,40,40"/>
+                    <Label  AbsoluteLayout.LayoutBounds="50,210"
+                        TextColor="White"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        Text="Músic" />
+                    <Label  AbsoluteLayout.LayoutBounds="10,240"
+                        Text="Lorem Ipsum is simply dummy text of the printing and typesetting indus. Lorem Ipsum has been the industry's standard " 
+                        TextColor="Gray"
+                        FontAttributes="None"
+                        FontSize="Medium"
+                        />
+                    <Switch ThumbColor="Red"
+                        IsToggled="True"
+                        AbsoluteLayout.LayoutBounds="290,200"
+                        />
+                    <Image  AbsoluteLayout.LayoutBounds="20,290,40,40"
+                        Source="sound.png"/>
+                    <Label  AbsoluteLayout.LayoutBounds="70,300"
+                        Text="Loudness"
+                        TextColor="White"
+                        FontSize="Medium"
+                        FontAttributes="Bold"/>
+
+                    <Slider AbsoluteLayout.LayoutBounds="20,350"
+                            Maximum="9"
+                         MinimumTrackColor="Red"
+                         
+                        />
+                    <BoxView Color="Gray" 
+                         AbsoluteLayout.LayoutBounds="120,400,100,5"/>
+
+
+
+                    <Label   AbsoluteLayout.LayoutBounds="110,430"   
+                            TextColor="White"
+                         FontSize="Medium"
+                         FontAttributes="Bold"
+                        Text="Public References" />
+
+                    <Image Source="eyes.png"
+                       AbsoluteLayout.LayoutBounds="20,470"/>
+
+                    <Label AbsoluteLayout.LayoutBounds="60,475"
+                        Text="Visibilty"
+                       TextColor="White"
+                       FontSize="Medium"
+                       FontAttributes="Bold"/>
+                    <Label  AbsoluteLayout.LayoutBounds="20,500"
+                        TextColor="Gray"
+                        Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox  Grid.Row="17"
+                                Color="Gray"
+                              IsChecked="True"
+                              AbsoluteLayout.LayoutBounds="20,400
+                              "/>
+                        <Label Grid.Column="1" Grid.Row="17"
+                            Text="Lorem Ipsum" 
+                           TextColor="White"/>
+                        <CheckBox   Grid.Row="18"
+                                Color="Gray"
+                                    
+                                />
+                        <Label  Grid.Column="1" Grid.Row="18"
+                            Text="Lorem Ipsum"
+                            TextColor="White"/>
+
+                        <CheckBox   Color="Gray"
+                                Grid.Column="2" Grid.Row="17"
+                                />
+                        <Label Text="Lorem Ipsum"
+                           Grid.Column="3" Grid.Row="17"
+                           TextColor="White"/>
+                        <CheckBox   Grid.Column="4"
+                                Color="Gray"
+                                Grid.Row="17"
+                                IsChecked="True"
+                                />
+                        <Label Text="Lorem Ipsum"
+                            Grid.Column="5"
+                           TextColor="White"
+                           Grid.Row="17"/>
+                        <CheckBox Color="gray"
+                              Grid.Column="2" Grid.Row="18"
+                              IsChecked="True"
+                              />
+                        <Label  Text="Lorem Ipsum"
+                            TextColor="White"
+                            Grid.Column="3" Grid.Row="18"/>
+
+                        <CheckBox Color="Gray"
+                              Grid.Column="4" Grid.Row="18" />
+                        <Label Text="Lorem Ipsum"
+                            Grid.Column="5" Grid.Row="18"
+                           TextColor="White"
+                           />
+
+
+                    </Grid>
+                </AbsoluteLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
